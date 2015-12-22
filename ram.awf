@@ -1,0 +1,192 @@
+$WAVE4
+$RESOLUTION 1000
+$ENDTIME 300000
+I 1 "c#9#STD_LOGICc9 UX01ZWLH-"
+$S 1 1 "/ram_tb/clock"
+I 2 "a#28#STD_LOGIC_VECTOR(7 downto 0)1 ricd7 0 c#9#STD_LOGICc9 UX01ZWLH-"
+$BUS S 2 2 8 8 0 address
+$SC 7-+7
+I 3 "a#29#STD_LOGIC_VECTOR(15 downto 0)1 ricd15 0 c#9#STD_LOGICc9 UX01ZWLH-"
+$BUS S 3 3 16 8 0 dataIn
+$SC 15-30
+$S 4 1 8 0 MemRead
+$S 5 1 11 0 Write
+$BUS S 6 3 16 8 0 dataOut
+$SC 31-46
+P 0 1-46 CS "0"
+$WAVES 1
+=0 T 0
+=1 D 0 1
+R 1 6 =2 D 50k 1
+$VALUES
+V 1
+U
+R 2 3 1 0
+V 1
+1
+$END
+$WAVES 4
+*0
+*1
+R 1 10 =3 D 30k 1
+$VALUES
+V 1
+U
+R 2 5 0 1
+V 1
+0
+$END
+$WAVES 5
+*0
+*1
+R 1 10 *3
+$VALUES
+V 1
+U
+R 2 5 1 0
+V 1
+1
+$END
+$WAVES 7-+3 +5-+8
+*0
+*1
+$VALUES
+V 2
+U
+0
+$END
+$WAVES 11 24
+*0
+*1
+$VALUES
+V 2
+U
+0
+$END
+$WAVES 12 25
+*0
+*1
+$VALUES
+V 2
+U
+0
+$END
+$WAVES 13 28
+*0
+*1
+$VALUES
+V 2
+U
+0
+$END
+$WAVES 14
+*0
+*1
+$VALUES
+V 2
+U
+1
+$END
+$WAVES 26
+*0
+*1
+$VALUES
+V 2
+U
+0
+$END
+$WAVES +1
+*0
+*1
+R 1 10 *3
+$VALUES
+V 1
+U
+R 2 5 1 0
+V 1
+1
+$END
+$WAVES +2
+*0
+*1
+$VALUES
+V 2
+U
+1
+$END
+$WAVES +1
+*0
+*1
+R 1 10 *3
+$VALUES
+V 1
+U
+R 2 5 0 1
+V 1
+0
+$END
+$WAVES +1-+8
+*0
+=4 D 100k 2
+$VALUES
+V 2
+U
+0
+$END
+$WAVES +1
+*0
+*4
+$VALUES
+V 2
+U
+0
+$END
+$WAVES +1
+*0
+*4
+$VALUES
+V 2
+U
+0
+$END
+$WAVES +1
+*0
+*4
+$VALUES
+V 2
+U
+0
+$END
+$WAVES +1
+*0
+*4
+$VALUES
+V 2
+U
+1
+$END
+$WAVES +1
+*0
+*4
+$VALUES
+V 2
+U
+0
+$END
+$WAVES +1
+*0
+*4
+$VALUES
+V 2
+U
+1
+$END
+$WAVES +1
+*0
+*4
+$VALUES
+V 2
+U
+0
+$END
+$ENDWAVE
